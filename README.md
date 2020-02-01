@@ -7,9 +7,13 @@ ofstream derives from ostream, the fstream header includes the iostream header, 
 fstream is another C++ standard library like iostream and is used to read and write on files.
 
 These are the data types used for file handling from the fstream library:
+
 Data type 	Description
+
 ofstream 	It is used to create files and write on files.
+
 ifstream 	It is used to read from files.
+
 fstream 	It can perform the function of both ofstream and ifstream which means it can create files, write on files, and read from files.
 
 Add fstream::out to make a txt file that doesnt exist while using file.open
@@ -17,8 +21,11 @@ Add fstream::out to make a txt file that doesnt exist while using file.open
 ### srand()
 
 See Lec1 code for generating same/different random output
-#include <time.h>
+
+#include <time.h> 
+
 time_t t;
+
 srand((unsigned) time(&t));
 
 The srand() function in C++ seeds the pseudo random number generator used by the rand() function. The seed for rand() function is 1 by default.
