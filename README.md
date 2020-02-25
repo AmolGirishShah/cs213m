@@ -37,6 +37,10 @@ h >> 4 means h is multiplied by 2^4
 friend ostream &operator <<(ostream &os,const B& B_obj)\
 const B& B_obj vs B obj(Passing by value) : Saves expense of copying
 
+Arrays are always passed by reference, so no extra care is required for passing an array.\
+However, it is a safe and good practice for a caller to pass the size of the array as an
+additional parameter by value.
+
 
 ### Pending questions
 How to check large number of test cases for a program?
