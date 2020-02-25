@@ -34,7 +34,7 @@ The standard practice is to use the result of a call to time(0) as the seed. The
 ### Random things
 h >> 4 means h is multiplied by 2^4
 
-friend ostream &operator <<(ostream &os,const B& B_obj)
+friend ostream &operator <<(ostream &os,const B& B_obj)\
 const B& B_obj vs B obj(Passing by value) : Saves expense of copying
 
 
