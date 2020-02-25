@@ -30,5 +30,13 @@ It is a good practice to seed the pseudo random number generator only once at th
 
 The standard practice is to use the result of a call to time(0) as the seed. The time() function returns the number of seconds since 00:00 hours, Jan 1, 1970 UTC (i.e. the current unix timestamp). The value of seed changes with time. So every time we run the program, a new set of random number is generated.
 
+
+### Random things
+h >> 4 means h is multiplied by 2^4
+
+friend ostream &operator <<(ostream &os,const B& B_obj)
+const B& B_obj vs B obj(Passing by value) : Saves expense of copying
+
+
 ### Pending questions
 How to check large number of test cases for a program?
