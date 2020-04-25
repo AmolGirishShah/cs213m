@@ -30,6 +30,15 @@ It is a good practice to seed the pseudo random number generator only once at th
 
 The standard practice is to use the result of a call to time(0) as the seed. The time() function returns the number of seconds since 00:00 hours, Jan 1, 1970 UTC (i.e. the current unix timestamp). The value of seed changes with time. So every time we run the program, a new set of random number is generated.
 
+### Converting int to string
+#include <string> 
+
+std::string s = std::to_string(42);
+
+is therefore the shortest way I can think of. You can even omit naming the type, using the auto keyword:
+
+auto s = std::to_string(42);
+
 
 ### Random things
 h >> 4 means h is multiplied by 2^4
