@@ -37,6 +37,15 @@ std::string s = std::to_string(42);
 is therefore the shortest way I can think of. You can even omit naming the type, using the auto keyword:
 `
 auto s = std::to_string(42);
+
+# Advanced Python concepts
+more complex list comprehensions</br>
+map, filter, and reduce with lambdas </br>
+locals and globals</br>
+context managers</br>
+decorators and class decorators</br>
+generators</br>
+https://blog.usejournal.com/python-from-intermediate-to-superhero-1a86e518bb77
 `
 
 
