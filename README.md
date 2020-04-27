@@ -46,7 +46,28 @@ context managers</br>
 decorators and class decorators</br>
 generators</br>
 https://blog.usejournal.com/python-from-intermediate-to-superhero-1a86e518bb77
-`
+
+There are various ways to remove spaces from a string in Python. This tutorial is aimed to provide a short example of various functions we can use to remove whitespaces from a string.</br>
+Python String is immutable, so we can’t change its value. Any function that manipulates string value returns a new string and we have to explicitly assign it to the string, otherwise, the string value won’t change.</br>
+`s = '  Hello  World   From Pankaj \t\n\r\tHi There  ' `</br>Python String strip() function will remove leading and trailing whitespaces.If you want to remove only leading or trailing spaces, use lstrip() or rstrip() function instead.
+</br>`>>> s.strip()
+'Hello  World   From Pankaj \t\n\r\tHi There'
+`</br>We can use replace() to remove all the whitespaces from the string. This function will remove whitespaces between words too.
+</br>`>>> s.replace(" ", "") 
+'HelloWorldFromPankaj\t\n\r\tHiThere'`
+</br>If you want to get rid of all the duplicate whitespaces and newline characters, then you can use join() function with string split() function.
+</br>`>>> " ".join(s.split())
+'Hello World From Pankaj Hi There'`</br>
+If you want to get rid of all the whitespaces as well as newline characters, you can use string translate() function.</br>
+`>>> import string </br>`
+`>>> s.translate({ord(c): None for c in string.whitespace})
+'HelloWorldFromPankajHiThere'`
+
+</br>Python Remove Whitespaces from String using Regex
+We can also use a regular expression to match whitespace and remove them using re.sub() function.</br>
+Ref: https://www.journaldev.com/23763/python-remove-spaces-from-string
+
+
 
 
 ### Random things
